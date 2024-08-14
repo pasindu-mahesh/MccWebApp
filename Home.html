@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+            rel="stylesheet">
+        <title> </title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+            /*Top nav bar.........*/ 
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .container1{
+                font-size: 12px;
+                height: 8vh;
+                width: 100%;
+                background: #ffffff;   
+            }
+
+            .navbar1{
+                margin: 0;
+                padding: 0.5rem 1.5rem;
+                background: #800000;  
+                display: flex;
+                justify-content: space-between;
+                
+            }
+
+            .hedder-right, .hedder-left{
+                list-style-type: none;
+            }
+
+            .hedder-right li, .hedder-left li{
+                display: inline-block;
+            }
+
+            .hedder-right li .a1, .hedder-left li .a1{
+                text-decoration: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 7px 10px;
+            }
+            
+            .a1{
+                text-decoration: none;
+                color: #ffffff;  
+            }
+            
+            /*Logo.........*/ 
+            .logo1{
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 45vh;
+            }
+
+            /*Main nav bar.........*/ 
+          
+           *{
+                margin: 0;
+                padding: 0;
+            }
+            
+            
+            .container{
+                
+                font-size: 14px;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                margin-left: 09%;
+                
+            }
+
+            .navbar{
+                margin: 0;
+                padding: 0.3rem 1.0rem;
+                
+                
+            }
+
+            .nav-links{
+                display: flex;
+               /* gap: 1rem;*/
+            }
+
+            .navlink, .dropdown li{
+                list-style: none;
+                height: 100%;
+                padding: 0.5rem 1rem;
+                font-weight: 400;
+                cursor: pointer;
+                font-weight: 500;
+            }
+
+            a{
+                text-decoration: none;
+                color: #3b3b3b;
+                font-family: 'Montserrat', sans-serif;
+           
+            }
+           
+            .dropdown{
+                position: absolute;
+                padding: 0.5rem 0;
+                margin: 0.5rem -0.5rem;
+                background: rgb(238, 237, 237);
+                color: rgb(54, 54, 54);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                border-radius: 0.2rem;
+                font-size: 14px;
+                display: none;
+                width: 200px;
+            }
+
+            .navlink a:hover{
+                
+                color: #800000;
+            }
+
+            .Services:hover .dropdown{
+                display: block;
+                
+
+            }
+            .Services a{
+                display: flex;
+                
+            }
+
+            .expandIcon{
+                font-size: 20px;
+                position: relative;
+                right: -5px;
+                transform: rotate(0deg);
+                transition: 0.3s ease-in-out all;
+
+            }
+            
+            .Services:hover .expandIcon{
+                transform: rotate(180deg);
+            }
+
+            .dropdown li:hover{
+                background-color: rgb(248, 247, 247);;
+                color: #3b3b3b;
+                border-radius: 0.1rem;
+            }
+
+            .banner .banner1{
+                width: 70%;
+                margin: 20px;
+                padding: 0;
+                margin-left: 15%
+            }
+          
+            
+        </style>
+    </head>
+
+    <body>
+        <!-- Top nav bar -->
+
+        <div class="container1">
+            <nav class="navbar1">
+                <ul class="hedder-right">
+                    <li class="details">
+                        <a class="a1" href="#" title="phone">Tel : 0343412567</a>
+                    </li>
+                    <li class="details">
+                        <a class="a1" href="#" title="email">E-mail : MNC@gmail.com</a>
+                    </li>
+                </ul>
+                <ul class="hedder-left">
+                    
+                    <li class="details">
+                        <a class="a1" href="#" title="need Support?">Support? </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Logo -->
+
+        <div class="logo1"> 
+            <img src="MNC_Logo.png" alt="MNC_Logo">
+        </div>
+
+        <br><hr><br>
+
+         <div class="container">
+            <nav class="navbar">
+                <ul class="nav-links">
+
+                    <li class="navlink">
+                        <a href="#"> Home </a>
+                    </li>
+
+                    <li class="navlink Services">
+                        <a href="#"> About Us 
+                            <span class="material-icons-outlined expandIcon">
+                                expand_more
+                            </span>
+                        </a>
+                        <ul class="dropdown">
+                            <li> School</li>
+                            <li> Resouces</li>
+                            <li> History</li>
+                            <li> School and Community</li>
+                        </ul>
+                    </li>
+
+                    <li class="navlink Services">
+                        <a href="#"> Administration
+                                <span class="material-icons-outlined expandIcon">
+                                    expand_more
+                                </span>
+                            </a>
+                            <ul class="dropdown">
+                                <li> Administrative Structure</li>
+                                <li> School Development committee</li>
+                                <li> School management committee</li>
+                                <li> Academic Staff</li>
+                                <li> Prefect's Guild</li>
+                            </ul>    
+                    </li>
+
+                    <li class="navlink Services">
+                        <a href="#"> Academic 
+                            <span class="material-icons-outlined expandIcon">
+                                expand_more
+                            </span>
+                        </a>
+                        <ul class="dropdown">
+                            <li> Study Materials</li>
+                            <li> Unit Test Papers</li>
+                            <li> GCE A/L Exam Results</li>
+                            <li> GCE O/L Exam Results</li>
+                            <li> Term Test</li>
+                        </ul>
+                    </li>
+
+                    <li class="navlink Services">
+                        <a href="#"> Extra Curricular 
+                            <span class="material-icons-outlined expandIcon">
+                                expand_more
+                             </span>
+                        </a>
+                        <ul class="dropdown">
+                            <li> Sports</li>
+                            <li> Societies</li>
+                            <li> Clubs</li>
+                            <li> Achievements</li>
+                        </ul>
+                    </li>
+
+                    <li class="navlink Services">
+                        <a href="#"> News
+                            <span class="material-icons-outlined expandIcon">
+                                expand_more
+                            </span>  
+                        </a>
+                        <ul class="dropdown">
+                            <li> News 01</li>
+                            <li> News 02</li>
+                            <li> News 03</li>
+                        </ul>
+                    </li>
+
+                    <li class="navlink">
+                        <a href="#"> Gallery </a>
+                    </li>
+
+                    <li class="navlink">
+                        <a href="#"> Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+        <div class="banner" >
+            <img class="banner1" src="83975346_1241754709548217_416653896916664320_n.jpg" alt="">
+        </div>
+    </body>
+</html>
